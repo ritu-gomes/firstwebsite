@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cuda-template</title>
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+    <header id="home" class="clearfix">
+        <nav>
+            <div class="row">
+                <a href="#" class="logo">
+                  <img src="resources/img/Cudalogo.png" alt="cuda">  
+                </a>
+                <ul class="mainnav">
+                    <li class="active"><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#team">team</a></li>
+                    <li><a href="#skill">work</a></li>
+                    <li><a href="#feedb">feedback</a></li>
+                    <li><a href="#cont">contact</a></li>
+                </ul>
+                <div class="ham">
+                    <span onclick="opennav()">&#9776;</span>
+                    <div id="mynav" class="olc">
+                        <a href="javascript:void(0)" class="xros" onclick="closenav()">&times;</a>
+                        <div class="overlay">
+                            <a onclick="closenav()" href="#home">home</a>
+                            <a onclick="closenav()" href="#about">about</a>
+                            <a onclick="closenav()" href="#team">team</a>
+                            <a onclick="closenav()" href="#skill">work</a>
+                            <a onclick="closenav()" href="#feedb">feedback</a>
+                            <a onclick="closenav()" href="#cont">contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="hero_text_box">
+                <h1>
+                    Hi there! We are the new kids on the block 
+                    and we build awesome websites and mobile apps.
+                </h1>
+                <a href="#" class="btn btn_hero"> work with us! </a>
+            </div>
+        </div>
+    </header>
+    <!--service section-->
+    <section class="service clearfix sb" id="about">
+        <div class="row">
+            <h2>servises we provide</h2>
+            <p class="des">We are working with both individuals and businesses from all over the globe to create awesome websites and applications.</p>
+        </div>
+        <div class="row flex">
+            <div class="col span_1_of_4 box d-flex">
+                <img src="resources/img/flag.png" alt="flag">
+                <h3>branding</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+            </div>
+        
+            <div class="col span_1_of_4 box d-flex">
+                <img src="resources/img/pen.png" alt="pen">
+                <h3>design</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem  </p>
+            </div>
+        
+            <div class="col span_1_of_4 box d-flex">
+                <img src="resources/img/gears.png" alt="gears">
+                <h3>development</h3>
+                <p>At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
+            </div>
+        
+            <div class="col span_1_of_4 box d-flex">
+                <img src="resources/img/rocket.png" alt="rocket">
+                <h3>rocket science</h3>
+                <p>Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
+            </div>
+        </div>
+    </section>
+
+	<!--member section-->
+    <section class="team clearfix" id="team">
+        <div class="row">
+            <h2>MEET OUR BEAUTIFUL TEAM</h2>
+            <p class="des" >We are a small team of designers and developers, who help brands with big ideas.</p>
+        </div>
+        <div class="row flex">
+            <div class="col span_1_of_4 box d-flex">
+                <img src="resources/css/bgimg/mem01.jpg" alt="member1" class="teammem">
+                <h3>ANNE HATHAWAY</h3>
+                <span>CEO / Marketing Guru</span>
+                <p>Lorem ipsum dolor sit amet, 
+                    consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                <div class="icon">
+                    <ul>
+                        <li> <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li> <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                        <li> <a href="https://www.facebook.com"><i class="fab fa-linkedin"></i></a></li>
+                        <li> <a href="https://www.gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="col span_1_of_4 box d-flex">
+                <img src="resources/css/bgimg/brown.jpg" alt="member1" class="teammem">
+                <h3>kate Upton</h3>
+                <span>Creative Director</span>
+                <p>Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+                <div class="icon">
+                    <ul>
+                        <li> <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                        <li> <a href="https://www.facebook.com"><i class="fab fa-linkedin"></i></a></li>
+                        <li> <a href="https://www.gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+       
+            <div class="col span_1_of_4 box d-flex">
+                <img src="resources/css/bgimg/man.jpg" alt="member1" class="teammem">
+                <h3>Olivia Wilde</h3>
+                <span>Lead Designer</span>
+                <p>Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+                <div class="icon">
+                    <ul>
+                        <li> <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                        <li> <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                        <li> <a href="https://www.facebook.com"><i class="fab fa-linkedin"></i></a></li>
+                        <li> <a href="https://www.gmailcom"><i class="fas fa-envelope-square"></i></a></li>
+                    </ul>
+                        
+                </div>
+            </div>
+        
+            <div class="col span_1_of_4 box d-flex">
+                <img src="resources/css/bgimg/mem03.jpg" alt="member1" class="teammem">
+                <h3>Ashley Greene</h3>
+                <span>SEO / Developer</span>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                <div class="icon">
+                    <ul>
+                       <li> <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                       <li> <a href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a></li>
+                       <li> <a href="https://www.gmailcom"><i class="fas fa-envelope-square"></i></a></li>
+                    </ul>   
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--skill section-->
+
+    <section class="skill clearfix" id="skill">
+        <div class="row">
+            <h2>we got skils</h2>
+            <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="row flex">
+            <div class="col span_1_of_4 box d-flex">
+                <svg class="radial-progress rd1" data-percentage="90"          viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">90%</text>
+                </svg>
+                <h3>web design</h3>
+            </div>
+        
+            <div class="col span_1_of_4 box d-flex">
+                <svg class="radial-progress rd2" data-percentage="75"          viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                </svg>
+                <h3>html/css</h3>
+            </div>
+        
+        
+            <div class="col span_1_of_4 box d-flex">
+                <svg class="radial-progress rd3" data-percentage="70"          viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">70%</text>
+                </svg>
+                <h3>graphic design</h3>
+            </div>
+        
+        
+            <div class="col span_1_of_4 box d-flex">
+                <svg class="radial-progress rd4" data-percentage="85"          viewBox="0 0 80 80">
+                    <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                    <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
+                    <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">85%</text>
+                </svg>
+                <h3>ui/ux</h3>
+            </div>
+        </div>
+
+    </section>
+    <!--portfolio-->
+    <section class="pot">
+        <div class="row">
+            <h2>OUR PORTFOLIO</h2>
+            <p class="des">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit ametconsectetur, adipisci velit, sed quia non numquam
+            </p>
+        </div>
+        <div class="row">
+            <div class="selection">
+                <button type="button" data-filter="all">all</button>
+                <button type="button" data-filter=".web" >web</button>
+                <button type="button" data-filter=".apps">apps</button>
+                <button type="button" data-filter=".icon">icons</button>
+            </div>
+        </div>
+        <div class="row container">
+            <div class="col span_1_of_2 mix apps box">
+                <img src="resources/img/block.png" alt="all" class="c1">
+                <h4 class="Hi">sometric Perspective Mock-Up</h4>
+            </div>
+            <div class="col span_1_of_2 mix web box">
+                <img src="resources/img/block2.png" alt="web" class="c2">
+                <h4 class="hi">Viro Media Players UI</h4>
+            </div>
+            <div class="col span_1_of_2 mix icon box">
+                <img src="resources/img/block3.png" alt="apps" class="c3">
+                <h4 class="hi">time Zone App UI</h4>
+            </div>
+            <div class="col span_1_of_2 mix apps web icon box">
+                <img src="resources/img/block4.png" alt="icons" class="c4">
+                <h4 class="hi">Blog / Magazine Flat UI Kit</h4>
+            </div>
+          
+        </div>
+    </section>
+    <!--feed-->
+    <section class="feed clearfix" id="feedb">
+        <div class="row">
+            <h2>what people say about us</h2>
+            <p class="des">our clients love us!</p>
+        </div>
+        <div class="row">
+            <div class="col span_1_of_2 box">
+                <div class="ph">
+                    <img src="resources/css/bgimg/brown.jpg" alt="c1">
+                </div>
+                <div class="rate">
+                    <p class="des">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+                    </p>
+                    <h3>channel iman</h3>
+                    <span>ceo of pinterest</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="ph">
+                    <img src="resources/css/bgimg/mem01.jpg" alt="c2">
+                </div>
+                <div class="rate">
+                    <p class="des">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                    </p>
+                    <h3>adriana lima</h3>
+                    <span>founder of instagram</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="ph">
+                    <img src="resources/css/bgimg/mem03.jpg" alt="c3">
+                </div>
+                <div class="rate">
+                    <p class="des">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.”
+                    </p>
+                    <h3>anny HATHAWAY</h3>
+                    <span>lead designer at behance</span>
+                </div>
+            </div>
+            <div class="col span_1_of_2 box">
+                <div class="ph">
+                    <img src="resources/css/bgimg/man.jpg" alt="c4">
+                </div>
+                <div class="rate">
+                    <p class="des">"Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus molestie, risus sem cursus."
+                    </p>
+                    <h3>emma stone</h3>
+                    <span>co-founder of shazam</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact-->
+    <section class="con" id="cont">
+        <div class="row">
+            <h2>get in touch</h2>
+            <p class="des">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111
+            </p>
+        </div>
+        <div class="row">
+            <form action="https://formspree.io/irengomes018@gmail.com" method="post">
+                <div class="row">
+                    <div class="col span_1_of_2">
+                        <input type="text" name="name" placeholder="Name *" required>
+                    </div>
+                    <div class="col span_1_of_2">
+                        <input type="email" name="mails" placeholder="Email *" required>
+                    </div>
+                    <div class="row">
+                        <textarea name="comments" cols="30" rows="10" placeholder="Your Message *" required></textarea>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Send Message" class="btn btn_hero">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--footer-->
+    <footer class="ftr">
+        <div class="row">
+            <ul>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">twitter></a></li>
+                <li><a href="#">google+</a></li>
+                <li><a href="#">linkedin</a></li>
+                <li><a href="#">behance</a></li>
+                <li><a href="#">dribbble</a></li>
+                <li><a href="#">git hub</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="vendors/js/html5shiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
+    <script src="https://kit.fontawesome.com/aaa5ee70cd.js" crossorigin="anonymous"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="vendors/js/progbar.js"></script>
+    <script src="vendors/js/mixitup.min.js"></script>
+    <script src="resources/js/main.js"></script>
+</body>
+</html>
